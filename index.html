@@ -1,5 +1,6 @@
 <!DOCTYPE html>
     <html lang="en">
+        <div id="particles-js"></div>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +19,7 @@
     </head>
     <body>
         <!--=============== HEADER PROFILE ===============-->
+        
         <header class="profile container">
             <div class="profile__container grid">
                 <div class="profile__data">
@@ -27,7 +29,7 @@
                         </div>
                     </div>
                     <h2 class="profile__name" data-aos="fade-down" data-aos-duration="1500">Jonathan Vancent</h2>
-                    <h3 class="profile__profession" data-aos="fade-down" data-aos-duration="1500">Undergraduate Student</h3>
+                    <h3 class="profile__profession" data-aos="fade-down" data-aos-duration="1500">Software Engineer</h3>
                 
                     <ul class="profile__social-link" data-aos="fade-down" data-aos-duration="1800">
                         <a href="https://www.instagram.com/jonathanvancent/?hl=id" target="_blank"class="profile__social-link">
@@ -36,7 +38,7 @@
                         <a href="https://www.linkedin.com/in/jonathan-vancent-3aa4a3176/" target="_blank"class="profile__social-link">
                             <i class="ri-linkedin-box-line"></i>
                         </a>
-                        <a href="https://github.com/" target="_blank"class="profile__social-link">
+                        <a href="https://github.com/Flewtime" target="_blank"class="profile__social-link">
                             <i class="ri-github-line"></i>
                         </a>
                     </ul>
@@ -80,6 +82,9 @@
             <section class="filters container">
                 <!--=============== FILTERS TABS ===============-->
                 <ul class="filters__content">
+                    <button class="filters__button" data-target="#All">
+                        All
+                    </button>
                     <button class="filters__button" data-target="#Website">
                         Website
                     </button>
@@ -94,26 +99,62 @@
                     </button>
                 </ul>
                 <div class="filters__sections" data-aos="fade">
-                    <!--=============== PROJECTS ===============-->
-                    <div class="projects__content grid filter__active" data-content id="Website">
+                    <!--=============== ALL  ===============-->
+                    <div class="projects__content grid filter__active" data-content id="All">
                         <article class="project__card" data-aos="fade">
-                            <img src="assets/img/project1.jpg" alt="" class="projects__img">
+                            <img src="assets/img/WebsiteMall.png" alt="" class="projects__img">
                             <div class="projects__modal">
                                 <div>
                                     <span class="projects__subtitle">Web</span>
-                                    <h3 class="projects__title">Port web</h3>
-                                    <a href="#" class="projects__button button button__small">
+                                    <h3 class="projects__title">Mall Website</h3>
+                                    <a href="https://github.com/Flewtime/Mall-Website" class="projects__button button button__small">
                                         <i class="ri-link"></i>
                                     </a>
                                 </div>
                             </div>
                         </article>
                         <article class="project__card">
-                            <img src="assets/img/project2.jpg" alt="" class="projects__img">
+                            <img src="assets/img/GuitarWebsite.png" alt="" class="projects__img">
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Web</span>
+                                    <h3 class="projects__title">GuitarStore</h3>
+                                    <a href="https://github.com/Flewtime/GuitarStore" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project__card">
+                            <img src="assets/img/WebComingSoon.png" alt="" class="projects__img">
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Web</span>
+                                    <h3 class="projects__title">Coming Soon...</h3>
+                                    <a href="#" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project__card" data-aos="fade">
+                            <img src="assets/img/NetIncome.png" alt="" class="projects__img">
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Mobile</span>
+                                    <h3 class="projects__title">NetIncome</h3>
+                                    <a href="https://github.com/Flewtime/Expense_tracker" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project__card" data-aos="fade">
+                            <img src="assets/img/AtomTrack.png" alt="" class="projects__img">
                             <div class="projects__modal">
                                 <div>
                                     <span class="projects__subtitle">Game</span>
-                                    <h3 class="projects__title">Game</h3>
+                                    <h3 class="projects__title">Atom Track</h3>
                                     <a href="#" class="projects__button button button__small">
                                         <i class="ri-link"></i>
                                     </a>
@@ -121,11 +162,35 @@
                             </div>
                         </article>
                         <article class="project__card">
-                            <img src="assets/img/project3.jpg" alt="" class="projects__img">
+                            <img src="assets/img/WhiteBlood.png" alt="" class="projects__img">
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Game</span>
+                                    <h3 class="projects__title">White Blood Cells</h3>
+                                    <a href="#" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project__card">
+                            <img src="assets/img/Debt.png" alt="" class="projects__img">
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Game</span>
+                                    <h3 class="projects__title">Debt!</h3>
+                                    <a href="#" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project__card" data-aos="fade">
+                            <img src="assets/img/StickAround.png" alt="" class="projects__img">
                             <div class="projects__modal">
                                 <div>
                                     <span class="projects__subtitle">UI/UX</span>
-                                    <h3 class="projects__title">UI/UX</h3>
+                                    <h3 class="projects__title">Stick Around</h3>
                                     <a href="#" class="projects__button button button__small">
                                         <i class="ri-link"></i>
                                     </a>
@@ -133,11 +198,74 @@
                             </div>
                         </article>
                         <article class="project__card">
-                            <img src="assets/img/project4.jpg" alt="" class="projects__img">
+                            <img src="assets/img/BuahTangan.png" alt="" class="projects__img">
                             <div class="projects__modal">
                                 <div>
-                                    <span class="projects__subtitle"></span>
-                                    <h3 class="projects__title">Nexo</h3>
+                                    <span class="projects__subtitle">UI/UX</span>
+                                    <h3 class="projects__title">Buah Tangan</h3>
+                                    <a href="#" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project__card">
+                            <img src="assets/img/ComingSoon.png" alt="" class="projects__img">
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Mobile</span>
+                                    <h3 class="projects__title">Coming Soon...</h3>
+                                    <a href="#" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project__card">
+                            <img src="assets/img/ComingSoon.png" alt="" class="projects__img">
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Mobile</span>
+                                    <h3 class="projects__title">Coming Soon...</h3>
+                                    <a href="#" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!--=============== WEBSITE ===============-->
+                    <div class="projects__content grid filter__active" data-content id="Website">
+                        <article class="project__card" data-aos="fade">
+                            <img src="assets/img/WebsiteMall.png" alt="" class="projects__img">
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Web</span>
+                                    <h3 class="projects__title">Mall Website</h3>
+                                    <a href="https://github.com/Flewtime/Mall-Website" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project__card">
+                            <img src="assets/img/GuitarWebsite.png" alt="" class="projects__img">
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Web</span>
+                                    <h3 class="projects__title">GuitarStore</h3>
+                                    <a href="https://github.com/Flewtime/GuitarStore" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project__card">
+                            <img src="assets/img/WebComingSoon.png" alt="" class="projects__img">
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Web</span>
+                                    <h3 class="projects__title">Coming Soon...</h3>
                                     <a href="#" class="projects__button button button__small">
                                         <i class="ri-link"></i>
                                     </a>
@@ -146,14 +274,26 @@
                         </article>
                     </div>
 
-                    <!--=============== SKILLS ===============-->
+                    <!--=============== MOBILE APP ===============-->
                     <div class="projects__content grid"  data-content id="MobileApp" data-aos="fade">
                             <article class="project__card" data-aos="fade">
-                                <img src="assets/img/project2.jpg" alt="" class="projects__img">
+                                <img src="assets/img/NetIncome.png" alt="" class="projects__img">
                                 <div class="projects__modal">
                                     <div>
-                                        <span class="projects__subtitle">Game</span>
-                                        <h3 class="projects__title">Game</h3>
+                                        <span class="projects__subtitle">Mobile</span>
+                                        <h3 class="projects__title">NetIncome</h3>
+                                        <a href="https://github.com/Flewtime/Expense_tracker" class="projects__button button button__small">
+                                            <i class="ri-link"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="project__card">
+                                <img src="assets/img/ComingSoon.png" alt="" class="projects__img">
+                                <div class="projects__modal">
+                                    <div>
+                                        <span class="projects__subtitle">Mobile</span>
+                                        <h3 class="projects__title">Coming Soon...</h3>
                                         <a href="#" class="projects__button button button__small">
                                             <i class="ri-link"></i>
                                         </a>
@@ -161,23 +301,11 @@
                                 </div>
                             </article>
                             <article class="project__card">
-                                <img src="assets/img/project3.jpg" alt="" class="projects__img">
+                                <img src="assets/img/ComingSoon.png" alt="" class="projects__img">
                                 <div class="projects__modal">
                                     <div>
-                                        <span class="projects__subtitle">UI/UX</span>
-                                        <h3 class="projects__title">UI/UX</h3>
-                                        <a href="#" class="projects__button button button__small">
-                                            <i class="ri-link"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </article>
-                            <article class="project__card">
-                                <img src="assets/img/project4.jpg" alt="" class="projects__img">
-                                <div class="projects__modal">
-                                    <div>
-                                        <span class="projects__subtitle"></span>
-                                        <h3 class="projects__title">Nexo</h3>
+                                        <span class="projects__subtitle">Mobile</span>
+                                        <h3 class="projects__title">Coming Soon...</h3>
                                         <a href="#" class="projects__button button button__small">
                                             <i class="ri-link"></i>
                                         </a>
@@ -185,14 +313,14 @@
                                 </div>
                             </article>
                         </div>
-                    <!--=============== Projects 3 ===============-->
+                    <!--=============== GAME DEVELOPMENT ===============-->
                     <div class="projects__content grid"  data-content id="GameDev" data-aos="fade">
                         <article class="project__card" data-aos="fade">
-                            <img src="assets/img/project2.jpg" alt="" class="projects__img">
+                            <img src="assets/img/AtomTrack.png" alt="" class="projects__img">
                             <div class="projects__modal">
                                 <div>
                                     <span class="projects__subtitle">Game</span>
-                                    <h3 class="projects__title">Game</h3>
+                                    <h3 class="projects__title">Atom Track</h3>
                                     <a href="#" class="projects__button button button__small">
                                         <i class="ri-link"></i>
                                     </a>
@@ -200,11 +328,11 @@
                             </div>
                         </article>
                         <article class="project__card">
-                            <img src="assets/img/project3.jpg" alt="" class="projects__img">
+                            <img src="assets/img/WhiteBlood.png" alt="" class="projects__img">
                             <div class="projects__modal">
                                 <div>
-                                    <span class="projects__subtitle">UI/UX</span>
-                                    <h3 class="projects__title">UI/UX</h3>
+                                    <span class="projects__subtitle">Game</span>
+                                    <h3 class="projects__title">White Blood Cells</h3>
                                     <a href="#" class="projects__button button button__small">
                                         <i class="ri-link"></i>
                                     </a>
@@ -212,11 +340,11 @@
                             </div>
                         </article>
                         <article class="project__card">
-                            <img src="assets/img/project4.jpg" alt="" class="projects__img">
+                            <img src="assets/img/Debt.png" alt="" class="projects__img">
                             <div class="projects__modal">
                                 <div>
-                                    <span class="projects__subtitle"></span>
-                                    <h3 class="projects__title">Nexo</h3>
+                                    <span class="projects__subtitle">Game</span>
+                                    <h3 class="projects__title">Debt!</h3>
                                     <a href="#" class="projects__button button button__small">
                                         <i class="ri-link"></i>
                                     </a>
@@ -224,26 +352,14 @@
                             </div>
                         </article>
                     </div>
-                    <!--=============== Projects 3 ===============-->
+                    <!--=============== UI/UX ===============-->
                     <div class="projects__content grid"  data-content id="UIUX" data-aos="fade">
                         <article class="project__card" data-aos="fade">
-                            <img src="assets/img/project2.jpg" alt="" class="projects__img">
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Game</span>
-                                    <h3 class="projects__title">Game</h3>
-                                    <a href="#" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="project__card">
-                            <img src="assets/img/project3.jpg" alt="" class="projects__img">
+                            <img src="assets/img/StickAround.png" alt="" class="projects__img">
                             <div class="projects__modal">
                                 <div>
                                     <span class="projects__subtitle">UI/UX</span>
-                                    <h3 class="projects__title">UI/UX</h3>
+                                    <h3 class="projects__title">Stick Around</h3>
                                     <a href="#" class="projects__button button button__small">
                                         <i class="ri-link"></i>
                                     </a>
@@ -251,11 +367,11 @@
                             </div>
                         </article>
                         <article class="project__card">
-                            <img src="assets/img/project4.jpg" alt="" class="projects__img">
+                            <img src="assets/img/BuahTangan.png" alt="" class="projects__img">
                             <div class="projects__modal">
                                 <div>
-                                    <span class="projects__subtitle"></span>
-                                    <h3 class="projects__title">Nexo</h3>
+                                    <span class="projects__subtitle">UI/UX</span>
+                                    <h3 class="projects__title">Buah Tangan</h3>
                                     <a href="#" class="projects__button button button__small">
                                         <i class="ri-link"></i>
                                     </a>
@@ -269,7 +385,7 @@
         </main>
 
         <!--=============== FOOTER ===============-->
-        <footer class="footer container">
+        <footer class="footer container" data-aos="fade">
             <span class="footer_copy">
                 &#169; Jonathan Vancent. All rights reserved
             </span>
@@ -283,7 +399,9 @@
             once: true,
         });
         </script>
-
+        
+        <script type="text/javascript" src="particles.js"></script>
+        <script type="text/javascript" src="app.js"></script>
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
     </body>

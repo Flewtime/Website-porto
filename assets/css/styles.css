@@ -50,11 +50,21 @@
   padding: 0;
   margin: 0;
 }
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  /* z-index: -1;  */
+  /* pointer-events: none; */
+
+  /* Set z-index to be behind other content */
+}
 
 body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
+  /* background-color: red; */
   color: var(--text-color);
 }
 
@@ -162,6 +172,7 @@ img {
   color: var(--title-color);
   transition: .3s;
 }
+
 .profile__social-link:hover{
   color: var(--first-color);
 }
@@ -247,7 +258,11 @@ font-size: var(--normal-font-size); margin-bottom: .25rem;
   display: flex;
   justify-content: space-between;
   column-gap: .5rem;
+  position: relative;
+  z-index: 1; 
 }
+
+
 
 .filters__button { 
   width: 100%;
@@ -282,7 +297,7 @@ font-size: var(--normal-font-size); margin-bottom: .25rem;
   position: absolute; 
   width: 100%;
   height: 100%;
-  bottom: 0;
+  bottom: -100%;
   left: 0;
   background: linear-gradient(180deg, hsla(var(--hue), 24%, 40%, .3) 0%, hsla(var(--hue), 24%, 4%, 1) 95%);
   display: grid;
@@ -307,6 +322,10 @@ font-size: var(--normal-font-size); margin-bottom: .25rem;
 
 .projects__button{
   padding: .5rem;
+}
+
+.project__card:hover .projects__modal{
+  bottom: 0;
 }
 /*=============== SKILLS ===============*/
 
