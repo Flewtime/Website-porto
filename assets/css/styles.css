@@ -385,8 +385,30 @@ font-size: var(--normal-font-size); margin-bottom: .25rem;
     row-gap: 1rem;
   }
   .skills__box{
-    column-gap: 1rem;
+    column-gap: .5rem;
   }
+  
+}
+
+@media screen and (max-width: 450px){ 
+  .container{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .profile__info{
+    column-gap: 1.5rem;
+  }
+  .profile__buttons{
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+  .skills__box{
+    column-gap: .5rem;
+  }
+  .filters__content {
+    width: 500px;
+  }
+
 }
 /* For medium devices */
 
